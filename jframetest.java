@@ -129,6 +129,8 @@ public class jframetest extends JFrame{
 					while(rs.next()) {
 						if (rs.getString(1).equals(user) && rs.getString(2).equals(pass)) {
 							JOptionPane.showMessageDialog(null, "Login successful");
+							MainWindow mw = new MainWindow();
+							mw.OnCreate();
 						}
 					}
 				}
